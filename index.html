@@ -300,7 +300,7 @@ $("#q").addEventListener("keydown",e=>{
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))$("#suggest").hidden=true;});
 
 // chips
-const SAMPLES=[["2330","台積電"],["0050","0050"],["2317","鴻海"],["2454","聯發科"],["2412","中華電"],["00878","00878"],["2603","長榮"]];
+const SAMPLES=[["2330","台積電"],["0050","元大台灣50"],["2317","鴻海"],["2454","聯發科"],["2412","中華電"],["00878","國泰高息"],["2603","長榮"]];
 $("#chips").innerHTML=SAMPLES.map(([c,n])=>`<button class="chip" data-code="${c}">${c} ${n}</button>`).join("");
 $("#chips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>pick(b.dataset.code));
 
